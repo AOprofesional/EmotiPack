@@ -27,7 +27,7 @@ const Pricing: React.FC = () => {
 
           {/* Caja Azul de Alto Impacto (#2563eb) */}
           <div className="bg-[#2563eb] rounded-[45px] md:rounded-[70px] p-10 md:p-20 shadow-[0_50px_100px_rgba(37,99,235,0.25)] text-white relative overflow-hidden border-t-8 border-white/10">
-            
+
             {/* Decoraciones de fondo modernas */}
             <div className="absolute top-0 right-0 w-80 h-80 bg-white/10 rounded-full -mr-40 -mt-40 blur-3xl"></div>
             <div className="absolute bottom-0 left-0 w-80 h-80 bg-black/10 rounded-full -ml-40 -mb-40 blur-3xl"></div>
@@ -69,9 +69,9 @@ const Pricing: React.FC = () => {
               {/* MOCKUP VISUAL */}
               <div className="relative w-full max-w-[320px] md:max-w-[450px] mb-12 transform hover:scale-105 transition-transform duration-500 ease-out">
                 <div className="absolute inset-0 bg-white/20 blur-[60px] rounded-full scale-75 opacity-50"></div>
-                <img 
-                  src="https://i.imgur.com/8PSWnmp.png" 
-                  alt="EmotiPack Mockup" 
+                <img
+                  src="https://i.imgur.com/8PSWnmp.png"
+                  alt="EmotiPack Mockup"
                   className="relative z-10 w-full h-auto drop-shadow-[0_25px_50px_rgba(0,0,0,0.5)]"
                 />
               </div>
@@ -87,10 +87,10 @@ const Pricing: React.FC = () => {
               </div>
 
               {/* Botón de Descarga Máximo Impacto */}
-              <button className="w-full max-w-lg bg-[#ffde00] hover:bg-[#ffe533] hover:scale-[1.03] active:scale-95 transition-all text-[#1a133d] font-black px-6 py-6 md:py-9 rounded-[25px] md:rounded-[35px] flex items-center justify-center gap-4 text-2xl md:text-4xl shadow-[0_20px_40px_rgba(255,222,0,0.4)] border-b-[8px] md:border-b-[10px] border-[#e6c800] uppercase mb-12 group">
+              <a href="https://pay.hotmart.com/T103511301C?checkoutMode=10" target="_blank" rel="noopener noreferrer" className="w-full max-w-lg bg-[#ffde00] hover:bg-[#ffe533] hover:scale-[1.03] active:scale-95 transition-all text-[#1a133d] font-black px-6 py-6 md:py-9 rounded-[25px] md:rounded-[35px] flex items-center justify-center gap-4 text-2xl md:text-4xl shadow-[0_20px_40px_rgba(255,222,0,0.4)] border-b-[8px] md:border-b-[10px] border-[#e6c800] uppercase mb-12 group">
                 DESCARGAR AHORA
                 <ArrowRight className="w-8 h-8 md:w-10 md:h-10 group-hover:translate-x-2 transition-transform" strokeWidth={4} />
-              </button>
+              </a>
 
               {/* Badges de Confianza Rápidos */}
               <div className="flex flex-col md:flex-row gap-6 md:gap-12 items-center opacity-70">

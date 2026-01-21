@@ -73,7 +73,7 @@ const FloatingElements: React.FC = () => {
           
           {/* Botón de WhatsApp */}
           <a 
-            href="https://wa.me/tu-numero-aqui" 
+            href="https://wa.me/5492616274593?text=Hola%20necesito%20mas%20informaci%C3%B3n%20de%20EmotiPack%3F" 
             target="_blank"
             rel="noopener noreferrer"
             className="bg-[#25D366] text-white p-5 rounded-full shadow-[0_20px_40px_rgba(37,211,102,0.3)] hover:scale-110 active:scale-95 transition-all relative group overflow-hidden"
