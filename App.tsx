@@ -1,35 +1,37 @@
 
 import React from 'react';
 import Hero from './components/Hero';
-import PainPoints from './components/PainPoints';
-import WhatIsIt from './components/WhatIsIt';
-import Benefits from './components/Benefits';
-import ProductInclude from './components/ProductInclude';
-import NotForYou from './components/NotForYou';
-import Bonuses from './components/Bonuses';
-import Pricing from './components/Pricing';
-import DeliveryInfo from './components/DeliveryInfo';
-import FAQ from './components/FAQ';
-import FinalCTA from './components/FinalCTA';
-import Footer from './components/Footer';
-import FloatingElements from './components/FloatingElements';
+const PainPoints = React.lazy(() => import('./components/PainPoints'));
+const WhatIsIt = React.lazy(() => import('./components/WhatIsIt'));
+const Benefits = React.lazy(() => import('./components/Benefits'));
+const ProductInclude = React.lazy(() => import('./components/ProductInclude'));
+const NotForYou = React.lazy(() => import('./components/NotForYou'));
+const Bonuses = React.lazy(() => import('./components/Bonuses'));
+const Pricing = React.lazy(() => import('./components/Pricing'));
+const DeliveryInfo = React.lazy(() => import('./components/DeliveryInfo'));
+const FAQ = React.lazy(() => import('./components/FAQ'));
+const FinalCTA = React.lazy(() => import('./components/FinalCTA'));
+const Footer = React.lazy(() => import('./components/Footer'));
+const FloatingElements = React.lazy(() => import('./components/FloatingElements'));
 
 const App: React.FC = () => {
   return (
     <div className="min-h-screen bg-white overflow-x-hidden">
       <Hero />
-      <PainPoints />
-      <WhatIsIt />
-      <Benefits />
-      <ProductInclude />
-      <NotForYou />
-      <Bonuses />
-      <Pricing />
-      <DeliveryInfo />
-      <FAQ />
-      <FinalCTA />
-      <Footer />
-      <FloatingElements />
+      <React.Suspense fallback={<div className="h-20" />}>
+        <PainPoints />
+        <WhatIsIt />
+        <Benefits />
+        <ProductInclude />
+        <NotForYou />
+        <Bonuses />
+        <Pricing />
+        <DeliveryInfo />
+        <FAQ />
+        <FinalCTA />
+        <Footer />
+        <FloatingElements />
+      </React.Suspense>
     </div>
   );
 };
