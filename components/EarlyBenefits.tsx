@@ -11,7 +11,7 @@ const EarlyBenefits: React.FC = () => {
                     <ul className="space-y-4">
                         {[
                             "Ayuda a identificar emociones",
-                            "Acompaña rutinas diarias",
+                            "Facilita conversaciones que antes no salían",
                             "Se usa en casa, sin pantallas"
                         ].map((text, i) => (
                             <li key={i} className="flex items-center gap-3 bg-white p-3 rounded-2xl shadow-sm border border-blue-100">
