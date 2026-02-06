@@ -66,7 +66,10 @@ const Pricing: React.FC = () => {
                   <ul className="space-y-2">
                     {[
                       "48 Cartas de Emociones PDF",
+                      "18 Fichas de Memoria",
                       "Tablero + Personajes Guía",
+                      "Dado Emocional",
+                      "4 Modos de Juego",
                       "Pizarra de Seguimiento Diario",
                       "Bono #1: Frases para Padres",
                       "Bono #2: Reto Conexión 7 Días"
