@@ -4,7 +4,7 @@ import { ArrowRight, MonitorOff, Home, Sparkles } from 'lucide-react';
 
 const Hero: React.FC = () => {
   return (
-    <section className="relative bg-primary text-white pt-16 pb-24 md:pt-24 md:pb-32 px-4 overflow-hidden">
+    <section id="hero-section" className="relative bg-primary text-white pt-16 pb-24 md:pt-24 md:pb-32 px-4 overflow-hidden">
       <style>{`
         @keyframes fadeInUp {
           from { opacity: 0; transform: translateY(30px); }

@@ -31,7 +31,7 @@ const WhatIsIt: React.FC = () => {
   ];
 
   return (
-    <section className="py-24 bg-[#f1f4f9] px-4">
+    <section id="what-is-it-section" className="py-24 bg-[#f1f4f9] px-4">
       <div className="max-w-6xl mx-auto">
         {/* Header Section */}
         <Reveal>
