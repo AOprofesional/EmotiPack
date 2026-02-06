@@ -70,7 +70,7 @@ const Benefits: React.FC = () => {
 
       <div className="mt-20 text-center bg-gray-50 p-10 rounded-3xl border border-dashed border-gray-300">
         <p className="text-gray-600 font-bold text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
-          "Para lograr estos cambios, diseñamos un kit físico (imprimible) que transforma cada emoción en una aventura de juego. <span className="text-blue-600 underline decoration-accent decoration-4">Mirá todo lo que incluye tu EmotiPack:</span>"
+          "Para lograr estos cambios, diseñamos un kit físico (imprimible) que transforma cada emoción en una aventura de juego. <span className="font-bold text-blue-600">Mirá todo lo que incluye tu EmotiPack:</span>"
         </p>
       </div>
     </section>

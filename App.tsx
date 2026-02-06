@@ -1,6 +1,9 @@
 
 import React from 'react';
 import Hero from './components/Hero';
+const Orientation = React.lazy(() => import('./components/Orientation'));
+const EarlyBenefits = React.lazy(() => import('./components/EarlyBenefits'));
+const EarlyCTA = React.lazy(() => import('./components/EarlyCTA'));
 const PainPoints = React.lazy(() => import('./components/PainPoints'));
 const WhatIsIt = React.lazy(() => import('./components/WhatIsIt'));
 const Benefits = React.lazy(() => import('./components/Benefits'));
@@ -19,11 +22,17 @@ const App: React.FC = () => {
     <div className="min-h-screen bg-white overflow-x-hidden">
       <Hero />
       <React.Suspense fallback={<div className="h-20" />}>
-        <PainPoints />
+        <Orientation />
+        <EarlyBenefits />
+        <EarlyCTA />
+
+        <div id="not-for-you-mobile" className="md:order-last">
+          <NotForYou />
+        </div>
+
         <WhatIsIt />
         <Benefits />
         <ProductInclude />
-        <NotForYou />
         <Bonuses />
         <Pricing />
         <DeliveryInfo />
